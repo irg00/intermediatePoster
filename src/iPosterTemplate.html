@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Design SA</title>
+  <style media="screen">
+    .card-group {
+      padding-right: 10px;
+      padding-left: 10px;
+      padding-top: 3px;
+    }
+
+    .row {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4 col-md-12">
+          <img src="../img/logoSA.jpg" type="icon" width="85px" height="85">
+          <span id="logoD" class="text-light">Design SA</span>
+          <hr>
+          <span class="text-light">Tienda online de posters con tus peliculas y series preferidas</span>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="col-md">
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active text-light bg-dark" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Inicio</a>
+              <a class="nav-item nav-link text-light bg-dark" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Pedidos</a>
+              <a class="nav-item nav-link text-light bg-dark" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contacto</a>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- Jumbotron -->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Fluid jumbotron</h1>
+      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    </div>
+  </div>
+  <!-- nav Peliculas-->
+  <nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-peliculas" role="tab" aria-controls="nav-home" aria-selected="true">Peliculas</a>
+      <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-series" role="tab" aria-controls="nav-profile" aria-selected="false">Series</a>
+    </div>
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-peliculas" role="tabpanel" aria-labelledby="nav-peliculas-tab">
+      <div class="card-group" id="cFilms">
+        <div class="card">
+          <img src="../img/goodFather.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title font-weight-bold">T</h5>
+            <p class="card-text"></p>
+            <p class="card-text"></p>
+            <h6 class="card-title font-weight-bolder"></h6>
+            <hr>
+            <p class="card-text">1 actor</p>
+            <p class="card-text">3 actor</p>
+            <p class="card-text">4 actor</p>
+            <hr>
+            <p class="card-text">Sinospis</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ePeliculas">
+              Comprar
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="ePeliculas" tabindex="-1" role="dialog" aria-labelledby="ePeliculasLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="ePeliculasLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- group card -->
+        <div class="card">
+          <img src="../img/theNever.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title font-weight-bold">Titulo</h5>
+            <p class="card-text">Año</p>
+            <p class="card-text">Genero</p>
+            <h6 class="card-title font-weight-bolder">Actores</h6>
+            <hr>
+            <p class="card-text">1 actor</p>
+            <p class="card-text">3 actor</p>
+            <p class="card-text">4 actor</p>
+            <hr>
+            <p class="card-text">Sinospis</p>
+
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ePeliculas">
+              Comprar
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="ePeliculas" tabindex="-1" role="dialog" aria-labelledby="ePeliculasLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="ePeliculasLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- group card -->
+        <div class="card">
+          <img src="../img/vengadoresP.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title font-weight-bold">Titulo</h5>
+            <p class="card-text">Año</p>
+            <p class="card-text">Genero</p>
+            <h6 class="card-title font-weight-bolder">Actores</h6>
+            <hr>
+            <p class="card-text">1 actor</p>
+            <p class="card-text">3 actor</p>
+            <p class="card-text">4 actor</p>
+            <hr>
+            <p class="card-text">Sinospis</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ePeliculas">
+              Comprar
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="ePeliculas" tabindex="-1" role="dialog" aria-labelledby="ePeliculasLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="ePeliculasLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- nav series -->
+
+    <div class="tab-pane fade" id="nav-series" role="tabpanel" aria-labelledby="nav-series-tab">
+      <div class="card-group">
+        <div class="card">
+          <img src="../img/breakingBad.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title font-weight-bold">Titulo</h5>
+            <p class="card-text">Año</p>
+            <p class="card-text">Genero</p>
+            <h6 class="card-title font-weight-bolder">Actores</h6>
+            <hr>
+            <p class="card-text">1 actor</p>
+            <p class="card-text">3 actor</p>
+            <p class="card-text">4 actor</p>
+            <hr>
+            <p class="card-text">Sinospis</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#eSeries">
+              Comprar
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="eSeries" tabindex="-1" role="dialog" aria-labelledby="eSeriesLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="eSeriesLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- group card -->
+        <div class="card">
+          <img src="../img/dark.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title font-weight-bold">Titulo</h5>
+            <p class="card-text">Año</p>
+            <p class="card-text">Genero</p>
+            <h6 class="card-title font-weight-bolder">Actores</h6>
+            <hr>
+            <p class="card-text">1 actor</p>
+            <p class="card-text">3 actor</p>
+            <p class="card-text">4 actor</p>
+            <hr>
+            <p class="card-text">Sinospis</p>
+
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#eSeries">
+              Comprar
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="eSeries" tabindex="-1" role="dialog" aria-labelledby="eSeriesLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="eSeriesLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- group card -->
+        <div class="card">
+          <img src="../img/strangerThings.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title font-weight-bold">Titulo</h5>
+            <p class="card-text">Año</p>
+            <p class="card-text">Genero</p>
+            <h6 class="card-title font-weight-bolder">Actores</h6>
+            <hr>
+            <p class="card-text">1 actor</p>
+            <p class="card-text">3 actor</p>
+            <p class="card-text">4 actor</p>
+            <hr>
+            <p class="card-text">Sinospis</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#eSeries">
+              Comprar
+            </button>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="eSeries" tabindex="-1" role="dialog" aria-labelledby="eSeriesLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="eSeriesLabel">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal -->
+  <div class="modal fade" id="ePeliculas" tabindex="-1" role="dialog" aria-labelledby="ePeliculasLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ePeliculasLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="page-footer font-small blue">
+    <div class="footer-copyright text-center py-3">© 2018 Copyright: Design SA //
+      <a href="#">Volver al inicio</a>
+    </div>
+  </footer>
+  <!-- scripts bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- script print -->
+  <script type="text/javascript">
+    //  Carrega de dades json
+    function getJSONVideos() {
+      // Petició ajax de les dades
+      $.getJSON('../dates/video.json', function(data) {
+        jsonVideos = data.video;
+        printFilms(jsonVideos.films);
+        printSeries(jsonVideos.series);
+      });
+    }
+
+    //  Mostra les pel·lícules (fa servir jquery)
+    function printFilms(listFilms) {
+      $('#list-films').html("<h1>Pel·lícules disponibles</h1>");
+      $.each(listFilms, function(key, val) {
+        let oFilm = val;
+        console.log("info:" + oFilm.id + " " + oFilm.name);
+        let card = `        <div class="card">
+                  <img src="${oFilm.cover}" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">${oFilm.name}</h5>
+                    <p class="card-text">${oFilm.duration}</p>
+                    <p class="card-text">${oFilm.genre}</p>
+                    <h6 class="card-title font-weight-bolder">Actores</h6>
+                    <hr>
+                    <p class="card-text">1 actor</p>
+                    <p class="card-text">3 actor</p>
+                    <p class="card-text">4 actor</p>
+                    <hr>
+                    <p class="card-text">${oFilm.sinopsis}</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ePeliculas">
+                      Comprar
+                    </button>
+                  </div>
+  											 `;
+        $('#list-films').append(card);
+      });
+    }
+
+    // Mostra les series (fa servir només javascript)
+    function printSeries(listSeries) {
+      document.querySelector("#list-series").innerHTML = "<h1>Sèries disponibles</h1>";
+      listSeries.forEach(function(element) {
+        let oSerie = element;
+        console.log("info serie:" + oSerie.id + " " + oSerie.name);
+        let card = `<div>
+  													<hr/>
+  													<h5 class="card-title">${oSerie.name}</h5>
+  													<p class="card-text">${oSerie.genre}</p>
+  											 </div>
+  											 `;
+        document.querySelector("#list-series").innerHTML += card;
+      });
+    }
+
+
+
+    $(document).ready(function() {
+      getJSONVideos();
+
+    });
+  </script>
+</body>
+
+</html>

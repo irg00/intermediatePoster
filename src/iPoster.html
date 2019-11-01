@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Design SA</title>
+  <style media="screen">
+    .jumbotron {
+      background-image: url("../img/mixposter.jpg");
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+
+
+    <header>
+      <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4 col-md-12">
+            <img src="../img/logoSA.jpg" type="icon" width="85px" height="85">
+            <span id="logoD" class="text-light">Design SA</span>
+            <hr>
+            <span class="text-light">Tienda online de posters con tus peliculas y series preferidas</span>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="col-md">
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active text-light bg-dark" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Inicio</a>
+                <a class="nav-item nav-link text-light bg-dark" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Pedidos</a>
+                <a class="nav-item nav-link text-light bg-dark" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contacto</a>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"></div>
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"></div>
+              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"></div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4 text-secondary">DESIGN S.A </h1>
+      </div>
+    </div>
+
+
+    <!-- nav-->
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="nav-peliculas-tab" data-toggle="tab" href="#nav-peliculas" role="tab" aria-controls="nav-peliculas" aria-selected="true">Peliculas</a>
+        <a class="nav-item nav-link" id="nav-series-tab" data-toggle="tab" href="#nav-series" role="tab" aria-controls="nav-series" aria-selected="false">Series</a>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-peliculas-tab">
+      <div class="tab-pane fade show active" id="nav-peliculas" role="tabpanel" aria-labelledby="nav-peliculas-tab">
+        <div id="cFilms" class="card-deck mb-3 text-center">
+        </div>
+      </div>
+      <div class="tab-pane fade" id="nav-series" role="tabpanel" aria-labelledby="nav-series-tab">
+        <div id="cSeries" class="card-deck mb-3 text-center">
+        </div>
+      </div>
+
+      <!-- modal -->
+      <div class="modal fade" id="eModal" tabindex="-1" role="dialog" aria-labelledby="eModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="titulo"></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                  <div class="col-md-3">
+                    <img src="" id="logo" width="250px">
+                  </div>
+                <hr>
+                <label>Precio:</label>
+                <span id="price"></span>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Añadir al carro</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <hr>
+  <footer class="page-footer font-small blue">
+    <div class="footer-copyright text-center py-3">© 2018 Copyright: Design SA //
+      <a href="#">Volver al inicio</a>
+    </div>
+  </footer>
+  </div>
+
+  <!-- scripts bootstrap -->
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+  <!-- script print -->
+  <script type="text/javascript">
+    //  CARGA DE DATOS JSON
+    function getJSONVideos() {
+      //PETICION DE AJAX
+      $.getJSON('../dates/video.json', function(data) {
+        jsonVideos = data.video;
+        printFilms(jsonVideos.films);
+        printSeries(jsonVideos.series);
+      });
+    }
+
+
+    function printFilms(listFilms) {
+      $('#cFilms').html("");
+      $.each(listFilms, function(key, val) {
+        let oFilm = val;
+        console.log("info:" + oFilm.id + " " + oFilm.name);
+        let card = `
+             <div class="card">
+                  <img src="${oFilm.cover}" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">${oFilm.name}</h5>
+                    <p class="card-text">${oFilm.duration}</p>
+                    <p class="card-text">${oFilm.genre}</p>
+                    <hr>
+                    <h6 class="card-title font-weight-bolder">Actores</h6>
+                    <hr>
+                    <p class="card-text">1 actor</p>
+                    <p class="card-text">3 actor</p>
+                    <p class="card-text">4 actor</p>
+                    <hr>
+                    <p class="card-text">${oFilm.sinopsis}</p>
+                    <button type="button" onClick="modalClick('${oFilm.name}','${oFilm.price}', '${oFilm.logo}')" class="btn btn-primary" data-toggle="modal" data-target="#eModal">
+                      Comprar Póster
+                    </button>
+                  </div>
+                  </div>
+  											 `;
+        $('#cFilms').append(card);
+      });
+    }
+
+    function printSeries(listSeries) {
+      document.querySelector("#cSeries").innerHTML = " ";
+      listSeries.forEach(function(element) {
+        let oSerie = element;
+        console.log("info serie:" + oSerie.id + " " + oSerie.name);
+        let card = `
+                  <div class="card">
+                  <img src="${oSerie.cover}" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">${oSerie.name}</h5>
+                    <p class="card-text">${oSerie.duration}</p>
+                    <p class="card-text">${oSerie.genre}</p>
+                    <hr>
+                    <h6 class="card-title font-weight-bolder">Actores</h6>
+                    <hr>
+                    <p class="card-text">1 actor</p>
+                    <p class="card-text">3 actor</p>
+                    <p class="card-text">4 actor</p>
+                    <hr>
+                    <p class="card-text">${oSerie.sinopsis}</p>
+                    <button type="button" onClick="modalClick('${oSerie.name}','${oSerie.price}', '${oSerie.logo}')" class="btn btn-primary" data-toggle="modal" data-target="#eModal">
+                      Comprar Póster
+                    </button>
+                  </div>
+                  </div>
+    										 `;
+        document.querySelector("#cSeries").innerHTML += card;
+      });
+    }
+    $(document).ready(function() {
+      getJSONVideos();
+    });
+
+
+    function modalClick(name, price, logo) {
+      $('#titulo').html(name);
+      $('#price').html(price);
+      $('#logo').attr("src", logo);
+      $('#modal-alert').modal("show");
+    };
+  </script>
+
+</body>
+
+</html>
