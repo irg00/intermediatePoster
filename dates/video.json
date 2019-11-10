@@ -11,7 +11,7 @@
         "price": "50€",
         "sinopsis": "Don Vito Corleone es uno de los mayores mafiosos de Nueva York y el cabeza de familia. Su hija se ha casado y su hijo Michael vuelve de la guerra, aunque no desea seguir con el negocio familiar de su padre. Don Vito Corleone se hace mayor y sus ideas empiezan a quedarse un poco obsoletas, especialmente cuando un recién llegado llega a la ciudad. Es un antiguo rival que necesitará las influencias del Sr.Corleone si quiere adentrarse en el mercado neoyorquino.",
         "stars": [{
-          "img": "../img/stars/marlonBrando.jpg",
+            "img": "../img/stars/marlonBrando.jpg",
             "character": "Don Vito Corleone",
             "name": "Marlon Brando"
           },
@@ -38,7 +38,7 @@
         "price": "50€",
         "sinopsis": "Bastian encuentra un libro que habla sobre una tierra llamada Fantasía, un lugar donde la oscuridad lo está destruyendo todo. Fantasía aguarda que un humano idéntico a él llegue para salvarlos, antes de que solo quede la nada.",
         "stars": [{
-          "img": "../img/stars/barretOliver.jpg",
+            "img": "../img/stars/barretOliver.jpg",
             "character": "Bastian",
             "name": "Barret Oliver"
           },
@@ -58,7 +58,7 @@
         "id": 3,
         "name": "Vengadores: Endgame",
         "genre": "Accion / Fantasia / Aventura",
-        "director": "Joe Russo / Antohony Russo",
+        "director": "Joe Russo / Anthony Russo",
         "duration": "3h 01min",
         "cover": "../img/posters/vengadoresP.jpg",
         "logo": "../img/vengadoresP.jpg",
@@ -84,76 +84,82 @@
     ],
     "series": [{
         "id": 4,
-        "name": "Chernobyl",
+        "name": "Breaking Bad",
         "genre": "Drama",
-        "director": "Craig Mazin",
-        "seasons": 2,
-        "price": "20€",
+        "director": "Vince Gilligan",
+        "seasons": 5,
         "cover": "../img/posters/breakingBad.jpg",
         "logo": "../img/breakingBad.jpg",
         "price": "50€",
-        "sinopsis": "undefined",
+        "sinopsis": "Tras cumplir 50 años, Walter White (Bryan Cranston), un profesor de química de un instituto de Albuquerque, Nuevo México, se entera de que tiene un cáncer de pulmón incurable. Casado con Skyler (Anna Gunn) y con un hijo discapacitado (RJ Mitte), la brutal noticia lo impulsa a dar un drástico cambio a su vida: decide, con la ayuda de un antiguo alumno (Aaron Paul), fabricar anfetaminas y ponerlas a la venta. Lo que pretende es liberar a su familia de problemas económicos cuando se produzca el fatal desenlace.",
         "stars": [{
-            "character": "Jessie",
-            "name": "Jessie Buckley"
+            "img": "../img/stars/bryanCranston.jpg",
+            "character": "Walter White",
+            "name": "Bryan Cranston"
           },
           {
-            "character": "Constantin",
-            "name": "Jared Harris"
+            "img": "../img/stars/aaronPaul.jpg",
+            "character": "Jeese Pinkman",
+            "name": "Aaron Paul"
           },
           {
-            "character": "Lorca",
-            "name": "Stellan Skarsgard"
+            "img": "../img/stars/annaGunn.jpg",
+            "character": "Skyler White",
+            "name": "Anna Gunn"
           }
         ]
       },
       {
         "id": 5,
-        "name": "Fariña",
-        "genre": "Crime",
-        "director": "Carlos Sedes",
-        "seasons": "2",
-        "price": "20€",
+        "name": "Stranger Things",
+        "genre": "Drama/Fantasia/Suspense",
+        "director": "Hermanos Duffer",
+        "seasons": 3,
         "cover": "../img/posters/strangerThings.jpg",
         "logo": "../img/strangerThings.jpg",
         "price": "50€",
-        "sinopsis": "undefined",
+        "sinopsis": "Stranger Things es una serie de televisión dramática de misterio que está ambientada en una localidad de Indiana. Dicho lugar adquiere fama por los extraños acontecimientos que están sucediendo, similares a los del 'Proyecto Montauk', un supuesto proyecto secreto llevado a cabo por el gobierno de los Estados Unidos en el que se realizaban experimentos con la finalidad de desarrollar técnicas de guerra psicológica.",
         "stars": [{
-            "character": "Sito Miñanco",
-            "name": "Javier Rey"
+            "img": "../img/stars/millye.jpg",
+            "character": "Eleven",
+            "name": "Millie Bobby Brown"
           },
           {
-            "character": "Darío Castro",
-            "name": "Tristán Ulloa"
+            "img": "../img/stars/harbour.jpg",
+            "character": "Jim Hooper",
+            "name": "David Harbour"
           },
           {
-            "character": "Manuel Charlín",
-            "name": "Antonio Durán"
+            "img": "../img/stars/gaten.jpg",
+            "character": "Dustin Henderson",
+            "name": "Gaten Matarazzo"
           }
         ]
       },
       {
         "id": 6,
-        "name": "La casa de papel",
-        "genre": "Action",
-        "director": "Álex Pina",
-        "seasons": "3",
-        "price": "20€",
+        "name": "Dark",
+        "genre": "Drama/Ciencia Ficcion/Suspense",
+        "director": "Baran bo Odar/Jantje Friese",
+        "seasons": 2,
         "cover": "../img/posters/dark.jpg",
         "logo": "../img/dark.jpg",
         "price": "50€",
-        "sinopsis": "undefined",
+        "sinopsis": "Dark es una serie original de Netflix del género de thriller de misterio con toques de fantasía sobrenatural. Esta serie es el primer proyecto que la compañía de streaming desarrolla que está escrita, rodada y producida en Alemania. Ambientada en la Alemania contemporánea, la serie gira alrededor de la desaparición de dos niños en Widen. El pueblo se vuelca en buscarles hasta que la situación cada vez se convierte más en una experiencia sobrenatural. Parece ser que todo se relaciona con los inexplicables sucesos que ocurrieron en 1986. Toda esta misteriosa desaparición, además, sacará a la luz el pasado y los secretos de cuatro familias que descubren que están conectadas.",
         "stars": [{
-            "character": "Tokio",
-            "name": "Úrsula Corberó"
+            "img": "../img/stars/louis.jpg",
+            "character": "Jonas Kahnwald",
+            "name": "Louis Hoffmann"
           },
           {
-            "character": "Raquel Murillo",
-            "name": "Itziar Ituño"
+            "img":"../img/stars/andreas.jpg",
+            "character": "The Stranger",
+            "name": "Andreas Pietschmann"
           },
           {
-            "character": "El Profesor",
-            "name": "Álvaro Morte"
+            "img":"../img/stars/mark.jpg",
+            "character": "Noah",
+            "name": "Mark Waschke"
           }
         ]
       }

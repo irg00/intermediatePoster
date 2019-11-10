@@ -35,16 +35,12 @@
           <div class="col-md">
             <nav>
               <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link active bg-danger text-white" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Inicio</a>
-                <a class="nav-item nav-link bg-danger text-white" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Pedidos</a>
-                <a class="nav-item nav-link bg-danger text-white" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contacto</a>
+                <a class="nav-item nav-link active bg-danger text-white" href="../src/iPoster.html">Inicio</a>
+                <a class="nav-item nav-link bg-danger text-white" href="../src/carrito.html">Pedidos</a>
+                <a class="nav-item nav-link bg-danger text-white" href="#nav-contact" >Contacto</a>
               </div>
             </nav>
-            <div class="tab-content" id="nav-tabContent">
-              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"></div>
-              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"></div>
-              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"></div>
-            </div>
+
           </div>
         </nav>
       </div>
@@ -87,12 +83,15 @@
               </button>
             </div>
             <div class="modal-body">
-              <div class="container">
-                <div class="card-deck mb-3 text-center">
-                  <img src="" id="logo" width="180px">
-                  <label>Precio:</label>
-                  <span id="price"></span>
-                </div>
+                <div class="img-responsive">
+                  <img src="" id="logo" width="250px">
+                <label>Precio:</label>
+                <span id="price"></span>
+                <select class="" name="">Tamaño:
+                  <option>1024x768</option>
+                  <option>1024x768</option>
+                  <option>1024x768</option>
+                </select>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-danger">Añadir al carro</button>
@@ -145,6 +144,7 @@
                     <h5 class="card-title font-weight-bold">${oFilm.name}</h5>
                     <p class="card-text">${oFilm.duration}</p>
                     <p class="card-text">${oFilm.genre}</p>
+                    <p class="card-text">Director: ${oFilm.director}</p>
                     <div class="card-header"><b>Actores</b></div>
                       <ul class="list-group list-group-flush">
                         ${printStars(oFilm.stars)}
@@ -173,15 +173,16 @@
                   <img src="${oSerie.cover}" class="card-img-top rounded" height="800" width="600">
                   <div class="card-body">
                     <h5 class="card-title font-weight-bold">${oSerie.name}</h5>
-                    <p class="card-text">${oSerie.duration}</p>
+                    <p class="card-text">${oSerie.seasons} Temporadas</p>
                     <p class="card-text">${oSerie.genre}</p>
+                    <p class="card-text">Director: ${oSerie.director}</p>
                     <hr class="style1">
                     <div class="card-header"><b>Actores</b></div>
                       <ul class="list-group list-group-flush">
                         ${printStars(oSerie.stars)}
                       </ul>
                     <hr class="style1">
-                    <p class="card-text">${oSerie.sinopsis}</p>
+                    <p class="card-text">${sumary(oSerie.sinopsis)}</p>
                     <button type="button" onClick="modalClick('${oSerie.name}','${oSerie.price}', '${oSerie.cover}')" class="btn btn-danger" data-toggle="modal" data-target="#eModal">
                       Comprar Póster
                     </button>
